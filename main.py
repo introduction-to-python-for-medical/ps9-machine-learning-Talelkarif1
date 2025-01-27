@@ -1,5 +1,4 @@
 import pandas as pd
-
 df = pd.read_csv('parkinsons.csv')
 df = df.dropna()
 
@@ -10,7 +9,6 @@ x = df[features]
 y = df[target]
 
 from sklearn.preprocessing import MinMaxScaler
-
 scaler = MinMaxScaler()
 x_scaled = scaler.fit_transform(x)
 
