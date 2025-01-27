@@ -1,2 +1,2 @@
-path: "tal_model.joblib"
+path: "tal_model(1).joblib"
 features: ['PPE', 'DFA']
