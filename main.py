@@ -2,7 +2,7 @@ import pandas as pd
 
 df = pd.read_csv('parkinsons.csv')
 df = df.dropna()
-print(df.columns)
+
 
 features = ['PPE', 'DFA']
 target = 'status'
@@ -28,6 +28,4 @@ y_pred = model.predict(x_test)
 accuracy = accuracy_score(y_test, y_pred)
 print(f'Accuracy: {accuracy}')
 
-import joblib
 
-joblib.dump(model, 'tal_model.joblib')
